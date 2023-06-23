@@ -18,7 +18,7 @@ jobs:
           flake8 . --count --show-source --statistics --exclude=./test_*.py
       - name: Ls
         run: |
-          ls ./fun-*.txt
+          ls ./*.py
       - name: Test
         run: |
           pytest test_*.py
