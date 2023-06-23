@@ -19,6 +19,9 @@ jobs:
       - name: Ls
         run: |
           ls ./*.py
+      - name: REPORT
+        run: |
+          pytest test.py –-junitxml=’report.xml’
       - name: Test
         run: |
           pytest test_*.py
