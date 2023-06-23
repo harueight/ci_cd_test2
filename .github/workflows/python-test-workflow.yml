@@ -21,7 +21,7 @@ jobs:
           ls ./*.py
       - name: REPORT
         run: |
-          pytest test_fizzbuzz.py –-junitxml=report.xml
+          pytest test_*.py --junitxml='test-report.xml'
       - name: Test
         run: |
           pytest test_*.py
